@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khôi Nguyên Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <h1>Khôi Nguyên Store</h1>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button onclick="searchProduct()">Tìm</button>
+            </div>
+
+            <div class="contact">
+                <p><i class="fa-solid fa-phone"></i> 0936 148 348</p>
+                <p><i class="fa-solid fa-envelope"></i> khoinguyenstore@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#iphone">Apple</a></li>
+                <li><a href="#phone">Điện Thoại</a></li>
+                <li><a href="#tablet">Máy Tính Bảng</a></li>
+                <li><a href="#accessories">Phụ Kiện</a></li>
+                <li><a href="#news">Tin Tức</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HERO -->
+
+        <div class="banner">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop" alt="Banner">
+        </div>
+    </section>
+
+    <!-- IPHONE SECTION -->
+    <section class="products-section" id="iphone">
+        <div class="section-title">
+            <h2>APPLE - IPHONE</h2>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?q=80&w=500&auto=format&fit=crop" alt="iPhone">
+                <h3>iPhone 15 Pro Max</h3>
+                <p class="price">29.990.000đ</p>
+                <button onclick="buyNow('iPhone 15 Pro Max')">Mua Ngay</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=500&auto=format&fit=crop" alt="iPhone">
+                <h3>iPhone 14</h3>
+                <p class="price">19.990.000đ</p>
+                <button onclick="buyNow('iPhone 14')">Mua Ngay</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=500&auto=format&fit=crop" alt="iPhone">
+                <h3>iPhone 13</h3>
+                <p class="price">15.990.000đ</p>
+                <button onclick="buyNow('iPhone 13')">Mua Ngay</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=500&auto=format&fit=crop" alt="iPhone">
+                <h3>iPhone 12</h3>
+                <p class="price">12.990.000đ</p>
+                <button onclick="buyNow('iPhone 12')">Mua Ngay</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- PHONE SECTION -->
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?q=80&w=500&auto=format&fit=crop" alt="Cáp sạc">
+                <h3>Cáp Lightning</h3>
+                <p class="price">199.000đ</p>
+                <button onclick="buyNow('Cáp Lightning')">Mua Ngay</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=500&auto=format&fit=crop" alt="Đồng hồ">
+                <h3>Apple Watch</h3>
+                <p class="price">8.990.000đ</p>
+                <button onclick="buyNow('Apple Watch')">Mua Ngay</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news" id="news">
+        <div class="section-title">
+            <h2>TIN TỨC CÔNG NGHỆ</h2>
+        </div>
+
+        <div class="news-container">
+            <div class="news-card">
+                <h3>iPhone mới ra mắt với AI hiện đại</h3>
+                <p>Apple chính thức giới thiệu dòng iPhone mới với nhiều nâng cấp mạnh mẽ.</p>
+                <a href="https://www.apple.com" target="_blank">Xem thêm</a>
+            </div>
+
+            <div class="news-card">
+                <h3>Samsung giới thiệu điện thoại gập mới</h3>
+                <p>Thiết kế đẹp mắt cùng hiệu năng mạnh mẽ dành cho người dùng cao cấp.</p>
+                <a href="https://www.samsung.com" target="_blank">Xem thêm</a>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <h2>Liên Hệ Khôi Nguyên Store</h2>
+
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Nhập họ tên" required>
+            <input type="email" placeholder="Nhập email" required>
+            <textarea placeholder="Nội dung liên hệ" required></textarea>
+            <button type="submit">Gửi Liên Hệ</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Thông Tin</h3>
+                <p>Giới thiệu</p>
+                <p>Tin tức</p>
+                <p>Tuyển dụng</p>
+            </div>
+
+            <div>
+                <h3>Chính Sách</h3>
+                <p>Giao hàng</p>
+                <p>Đổi trả</p>
+                <p>Bảo hành</p>
+            </div>
+
+            <div>
+                <h3>Hỗ Trợ</h3>
+                <p>Hotline: 0936 148 348</p>
+                <p>Email: khoinguyenstore@gmail.com</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2026 Khôi Nguyên Store</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function buyNow(productName) {
+            alert('Bạn đã chọn mua: ' + productName);
+        }
+
+        function searchProduct() {
+            alert('Đang tìm kiếm sản phẩm...');
+        }
+
+        function sendMessage(event) {
+            event.preventDefault();
+            alert('Gửi liên hệ thành công!');
+        }
+    </script>
+
+</body>
+</html>
