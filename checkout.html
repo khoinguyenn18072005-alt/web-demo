@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thanh Toán - Khôi Nguyên Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="payment-page">
+
+        <!-- LEFT -->
+
+        <div class="payment-left">
+
+            <h1>Thông Tin Thanh Toán</h1>
+
+            <div class="product-info">
+
+                <img id="productImage" src="">
+
+                <div>
+
+                    <h2 id="productName"></h2>
+
+                    <p id="productPrice"></p>
+
+                </div>
+
+            </div>
+
+            <form id="paymentForm">
+
+                <input type="text"
+                placeholder="Họ và tên"
+                required>
+
+                <input type="text"
+                placeholder="Số điện thoại"
+                required>
+
+                <input type="text"
+                placeholder="Địa chỉ giao hàng"
+                required>
+
+                <textarea
+                placeholder="Ghi chú đơn hàng"></textarea>
+
+                <button type="submit">
+                    XÁC NHẬN ĐẶT HÀNG
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="payment-right">
+
+            <h2>Đơn Hàng</h2>
+
+            <div class="bill">
+
+                <div class="bill-row">
+                    <span>Tạm tính:</span>
+                    <span id="tempPrice"></span>
+                </div>
+
+                <div class="bill-row">
+                    <span>Phí vận chuyển:</span>
+                    <span>30.000đ</span>
+                </div>
+
+                <div class="bill-row total">
+                    <span>Tổng cộng:</span>
+                    <span id="totalPrice"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+                const name =
+        localStorage.getItem("productName");
+
+        const price =
+        localStorage.getItem("productPrice");
+
+        const image =
+        localStorage.getItem("productImage");
+
+        document.getElementById("productName")
+        .innerText = name;
+
+        document.getElementById("productPrice")
+        .innerText = price;
+
+        document.getElementById("productImage")
+        .src = image;
+
+        document.getElementById("tempPrice")
+        .innerText = price;
+
+        document.getElementById("totalPrice")
+        .innerText = price + " + 30.000đ";
+
+        // SUBMIT
+
+        document
+        .getElementById("paymentForm")
+        .addEventListener("submit", function(event){
+
+            event.preventDefault();
+
+            alert("Đặt hàng thành công!");
+
+            window.location.href = "index.html";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

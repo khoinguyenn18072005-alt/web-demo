@@ -59,28 +59,52 @@
                 <img src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?q=80&w=500&auto=format&fit=crop" alt="iPhone">
                 <h3>iPhone 15 Pro Max</h3>
                 <p class="price">29.990.000đ</p>
-                <button onclick="buyNow('iPhone 15 Pro Max')">Mua Ngay</button>
+                <button onclick="goToCheckout(
+                'iPhone 15 Pro Max',
+                '29.990.000đ',
+                'https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?q=80&w=500&auto=format&fit=crop'
+                )">
+                    Mua Ngay
+                </button>
             </div>
 
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=500&auto=format&fit=crop" alt="iPhone">
                 <h3>iPhone 14</h3>
                 <p class="price">19.990.000đ</p>
-                <button onclick="buyNow('iPhone 14')">Mua Ngay</button>
+                 <button onclick="goToCheckout(
+                    'iPhone 14',
+                    '19.990.000đ',
+                    'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=500&auto=format&fit=crop'
+                    )">
+                        Mua Ngay
+                 </button>
             </div>
 
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=500&auto=format&fit=crop" alt="iPhone">
                 <h3>iPhone 13</h3>
                 <p class="price">15.990.000đ</p>
-                <button onclick="buyNow('iPhone 13')">Mua Ngay</button>
+                <button onclick="goToCheckout(
+                'iPhone 13',
+                '15.990.000đ',
+                'https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=500&auto=format&fit=crop'
+                )">
+                    Mua Ngay
+                </button>
             </div>
 
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=500&auto=format&fit=crop" alt="iPhone">
                 <h3>iPhone 12</h3>
                 <p class="price">12.990.000đ</p>
-                <button onclick="buyNow('iPhone 12')">Mua Ngay</button>
+                <button onclick="goToCheckout(
+                'iPhone 12',
+                '12.990.000đ',
+                'https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=500&auto=format&fit=crop'
+                )">
+                    Mua Ngay
+                </button>
             </div>
 
         </div>
@@ -92,18 +116,185 @@
                 <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?q=80&w=500&auto=format&fit=crop" alt="Cáp sạc">
                 <h3>Cáp Lightning</h3>
                 <p class="price">199.000đ</p>
-                <button onclick="buyNow('Cáp Lightning')">Mua Ngay</button>
+                <button onclick="goToCheckout(
+                'Cáp Lightning',
+                '199.000đ',
+                'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?q=80&w=500&auto=format&fit=crop'
+                )">
+                    Mua Ngay
+                </button>
             </div>
 
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=500&auto=format&fit=crop" alt="Đồng hồ">
                 <h3>Apple Watch</h3>
                 <p class="price">8.990.000đ</p>
-                <button onclick="buyNow('Apple Watch')">Mua Ngay</button>
+                <button onclick="goToCheckout(
+                'Apple Watch',
+                '8.990.000đ',
+                'https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=500&auto=format&fit=crop'
+                )">
+                    Mua Ngay
+                </button>
             </div>
 
         </div>
     </section>
+    <!-- TABLET SECTION -->
+
+<section class="products-section" id="tablet">
+
+    <div class="section-title">
+        <h2>MÁY TÍNH BẢNG</h2>
+    </div>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=1000&auto=format&fit=crop" alt="iPad">
+
+            <h3>iPad Pro M2</h3>
+
+            <p class="price">24.990.000đ</p>
+
+            <button onclick="goToCheckout(
+            'iPad Pro M2',
+            '24.990.000đ',
+            'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=1000&auto=format&fit=crop'
+            )">
+                Mua Ngay
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=1000&auto=format&fit=crop" alt="Samsung Tab">
+
+            <h3>Samsung Galaxy Tab</h3>
+
+            <p class="price">13.990.000đ</p>
+
+            <button onclick="goToCheckout(
+            'Samsung Galaxy Tab',
+            '13.990.000đ',
+            'https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=1000&auto=format&fit=crop'
+            )">
+                Mua Ngay
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=1000&auto=format&fit=crop" alt="Xiaomi Pad">
+
+            <h3>Xiaomi Pad 6</h3>
+
+            <p class="price">9.990.000đ</p>
+
+            <button onclick="goToCheckout(
+            'Xiaomi Pad 6',
+            '9.990.000đ',
+            'https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=1000&auto=format&fit=crop'
+            )">
+                Mua Ngay
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1623126908029-58cb08a2b272?q=80&w=1000&auto=format&fit=crop" alt="Lenovo Tab">
+
+            <h3>Lenovo Tab P12</h3>
+
+            <p class="price">11.990.000đ</p>
+
+            <button onclick="goToCheckout(
+            'Lenovo Tab P12',
+            '11.990.000đ',
+            'https://images.unsplash.com/photo-1623126908029-58cb08a2b272?q=80&w=1000&auto=format&fit=crop'
+            )">
+                Mua Ngay
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ACCESSORIES SECTION -->
+
+<section class="products-section" id="accessories">
+
+    <div class="section-title">
+        <h2>PHỤ KIỆN</h2>
+    </div>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=1000&auto=format&fit=crop" alt="AirPods">
+
+            <h3>AirPods Pro</h3>
+
+            <p class="price">4.990.000đ</p>
+
+            <button onclick="goToCheckout(
+            'AirPods Pro',
+            '4.990.000đ',
+            'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=1000&auto=format&fit=crop'
+            )">
+                Mua Ngay
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1000&auto=format&fit=crop" alt="Loa JBL">
+
+            <h3>Loa Bluetooth JBL</h3>
+
+            <p class="price">2.490.000đ</p>
+
+            <button onclick="goToCheckout(
+            'Loa Bluetooth JBL',
+            '2.490.000đ',
+            'https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1000&auto=format&fit=crop'
+            )">
+                Mua Ngay
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1000&auto=format&fit=crop" alt="Tai nghe">
+
+            <h3>Tai Nghe Gaming</h3>
+
+            <p class="price">1.290.000đ</p>
+
+            <button onclick="goToCheckout(
+            'Tai Nghe Gaming',
+            '1.290.000đ',
+            'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1000&auto=format&fit=crop'
+            )">
+                Mua Ngay
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1000&auto=format&fit=crop" alt="Sạc">
+
+            <h3>Sạc Nhanh 20W</h3>
+
+            <p class="price">399.000đ</p>
+
+            <button onclick="goToCheckout(
+            'Sạc Nhanh 20W',
+            '399.000đ',
+            'https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1000&auto=format&fit=crop'
+            )">
+                Mua Ngay
+            </button>
+        </div>
+
+    </div>
+
+</section>
 
     <!-- NEWS -->
     <section class="news" id="news">
@@ -164,21 +355,8 @@
         <p class="copyright">© 2026 Khôi Nguyên Store</p>
     </footer>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        function buyNow(productName) {
-            alert('Bạn đã chọn mua: ' + productName);
-        }
-
-        function searchProduct() {
-            alert('Đang tìm kiếm sản phẩm...');
-        }
-
-        function sendMessage(event) {
-            event.preventDefault();
-            alert('Gửi liên hệ thành công!');
-        }
-    </script>
+    
+    <script src="script.js"></script>
 
 </body>
 </html>
